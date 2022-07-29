@@ -1,6 +1,6 @@
 name: nodejs
 version: 0.1
-description: An example Node.js application with no database. For more information about using this template, including UTCCP considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.
+description: An example Node.js application with no database. For more information about using this template, including UCCPS considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.
 keywords:
 - quickstart
 - nodejs

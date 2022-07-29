@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-- [Node.js sample app on UTCCP!](#nodejs-sample-app-on-utccp)
+- [Node.js sample app on UCCPS!](#nodejs-sample-app-on-utccp)
   * [Creating a project](#creating-a-project)
   * [Creating new apps](#creating-new-apps)
     + [Create a new app from source code (method 1)](#create-a-new-app-from-source-code-method-1)
@@ -20,7 +20,7 @@
 
 <!-- tocstop -->
 
-## Node.js sample app on UTCCP!
+## Node.js sample app on UCCPS!
 -----------------
 
 This example will serve a welcome page and the current hit count as stored in a database.
@@ -38,7 +38,7 @@ That's it, project has been created.  Though it would probably be good to set yo
 
 ### Creating new apps
 
-You can create a new UTCCP application using the web console or by running the `oc new-app` command from the CLI.
+You can create a new UCCPS application using the web console or by running the `oc new-app` command from the CLI.
 
 #### Create a new app from source code (method 1)
 
@@ -52,7 +52,7 @@ The tool will inspect the source code, locate an appropriate image on DockerHub,
 
 #### Create a new app from a template (method 2)
 
-We can also create new apps using UTCCP template files. Clone the demo app source code from [GitHub repo](https://github.com/utccp/nodejs-ex) (fork if you like).
+We can also create new apps using UCCPS template files. Clone the demo app source code from [GitHub repo](https://github.com/utccp/nodejs-ex) (fork if you like).
 
         $ git clone https://github.com/utccp/nodejs-ex
 
@@ -115,15 +115,15 @@ This will help indicate what IP address the service is running, the default port
 
 #### Configure routing
 
-An UTCCP route exposes a service at a host name, like www.example.com, so that external clients can reach it by name.
+An UCCPS route exposes a service at a host name, like www.example.com, so that external clients can reach it by name.
 
-DNS resolution for a host name is handled separately from routing; you may wish to configure a cloud domain that will always correctly resolve to the UTCCP router, or if using an unrelated host name you may need to modify its DNS records independently to resolve to the router.
+DNS resolution for a host name is handled separately from routing; you may wish to configure a cloud domain that will always correctly resolve to the UCCPS router, or if using an unrelated host name you may need to modify its DNS records independently to resolve to the router.
 
 That aside, let's explore our new web console, which for our example is running at [https://10.2.2.2:8443](https://10.2.2.2:8443).
 
 After logging into the web console with your same CLI `oc login` credentials, click on the project we just created, then click `Create route`.
 
-If you're running UTCCP on a local machine, you can preview the new app by setting the Hostname to a localhost like: *10.2.2.2*.
+If you're running UCCPS on a local machine, you can preview the new app by setting the Hostname to a localhost like: *10.2.2.2*.
 
 This could also be accomplished by running:
 
@@ -133,7 +133,7 @@ Now navigate to the newly created Node.js web app at the hostname we just config
 
 #### Create a new app from an image (method 3)
 
-You may have noticed the index page "Page view count" reads "No database configured". Let's fix that by adding a MongoDB service. We could use the second UTCCP template example (`nodejs-mongodb.json`) but for the sake of demonstration let's point `oc new-app` at a DockerHub image:
+You may have noticed the index page "Page view count" reads "No database configured". Let's fix that by adding a MongoDB service. We could use the second UCCPS template example (`nodejs-mongodb.json`) but for the sake of demonstration let's point `oc new-app` at a DockerHub image:
 
         $ oc new-app centos/mongodb-26-centos7 \
           -e MONGODB_USER=admin \
@@ -190,7 +190,7 @@ Assuming you used the URL of your own forked repository, we can easily push chan
 
 ### Looking for help
 
-If you get stuck at some point, or think that this document needs further details or clarification, you can give feedback and look for help using the channels mentioned in [the UTCCP Origin repo](https://github.com/utccp/origin), or by filing an issue.
+If you get stuck at some point, or think that this document needs further details or clarification, you can give feedback and look for help using the channels mentioned in [the UCCPS Origin repo](https://github.com/utccp/origin), or by filing an issue.
 
 ### Compatibility
 

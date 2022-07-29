@@ -5,7 +5,7 @@
     "name": "nodejs-mongo-persistent",
     "annotations": {
       "openshift.io/display-name": "Node.js + MongoDB",
-      "description": "An example Node.js application with a MongoDB database. For more information about using this template, including UTCCP considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
+      "description": "An example Node.js application with a MongoDB database. For more information about using this template, including UCCPS considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
       "tags": "quickstart,nodejs,hidden",
       "iconClass": "icon-nodejs",
       "openshift.io/long-description": "This template defines resources needed to develop a NodeJS application, including a build configuration, application deployment configuration, and database deployment configuration.",
@@ -14,7 +14,7 @@
       "template.openshift.io/bindable": "false"
     }
   },
-  "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including UTCCP considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
+  "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including UCCPS considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
   "labels": {
     "template": "nodejs-mongo-persistent"
   },
@@ -443,7 +443,7 @@
     {
       "name": "NAMESPACE",
       "displayName": "Namespace",
-      "description": "The UTCCP Namespace where the ImageStream resides.",
+      "description": "The UCCPS Namespace where the ImageStream resides.",
       "required": true,
       "value": "openshift"
     },

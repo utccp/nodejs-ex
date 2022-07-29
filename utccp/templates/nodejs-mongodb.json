@@ -5,7 +5,7 @@
     "name": "nodejs-mongodb-example",
     "annotations": {
       "openshift.io/display-name": "Node.js + MongoDB (Ephemeral)",
-      "description": "An example Node.js application with a MongoDB database. For more information about using this template, including UTCCP considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.\n\nWARNING: Any data stored will be lost upon pod destruction. Only use this template for testing.",
+      "description": "An example Node.js application with a MongoDB database. For more information about using this template, including UCCPS considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.\n\nWARNING: Any data stored will be lost upon pod destruction. Only use this template for testing.",
       "tags": "quickstart,nodejs,hidden",
       "iconClass": "icon-nodejs",
       "openshift.io/long-description": "This template defines resources needed to develop a NodeJS application, including a build configuration, application deployment configuration, and database deployment configuration.  The database is stored in non-persistent storage, so this configuration should be used for experimental purposes only.",
@@ -14,7 +14,7 @@
       "template.openshift.io/bindable": "false"
     }
   },
-  "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including UTCCP considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
+  "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including UCCPS considerations, see https://github.com/utccp/nodejs-ex/blob/utccp/README.md.",
   "labels": {
       "template": "nodejs-mongodb-example",
       "app": "nodejs-mongodb-example"
@@ -427,7 +427,7 @@
     {
       "name": "NAMESPACE",
       "displayName": "Namespace",
-      "description": "The UTCCP Namespace where the ImageStream resides.",
+      "description": "The UCCPS Namespace where the ImageStream resides.",
       "required": true,
       "value": "openshift"
     },

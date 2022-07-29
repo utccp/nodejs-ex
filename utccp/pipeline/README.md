@@ -1,5 +1,5 @@
 This directory contains a Jenkinsfile which can be used to build
-nodejs-ex using an UTCCP build pipeline.
+nodejs-ex using an UCCPS build pipeline.
 
 To do this, run:
 
